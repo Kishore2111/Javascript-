@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+
+<html>
+  <body>
+    <button id="bt" class="bts" onclick="start()">Click Me</button>
+  </body>
+  <script>
+    function start(){
+        let btn=document.getElementById('bt');
+        const events = ['click', 'mouseout'];
+
+events.forEach(event => {
+    btn.addEventListener(event, ()=>{
+      if(event=="click"){
+        alert("Welcome to proglint");
+        console.log(event);
+      }
+      else if(event=="mouseover"){
+        alert("Welcome to proglint!!(mouseover)")
+      }
+      else if(event=="mouseout"){
+        alert("welcome to Proglint!!(mouseout)")
+      }
+      
+    });
+});  
+    }
+  </script>
+</html>
